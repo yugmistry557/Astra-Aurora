@@ -1,0 +1,43 @@
+from pptx import Presentation
+from pptx.util import Inches
+
+# Create a new PowerPoint presentation
+presentation = Presentation()
+
+# Slide 1: Title Slide
+slide_1 = presentation.slides.add_slide(presentation.slide_layouts[0])
+title = slide_1.shapes.title
+subtitle = slide_1.placeholders[1]
+title.text = "Astra-Aurora Technical Submission"
+subtitle.text = "A Comprehensive Overview of the Aurora Forecasting System"
+
+# Slide 2: Introduction
+slide_2 = presentation.slides.add_slide(presentation.slide_layouts[1])
+title = slide_2.shapes.title
+content = slide_2.placeholders[1]
+title.text = "Introduction"
+content.text = "This presentation provides an overview of the Astra-Aurora aurora forecasting system, detailing its methodology, technology, and applications."
+
+# Slide 3: Methodology
+slide_3 = presentation.slides.add_slide(presentation.slide_layouts[1])
+title = slide_3.shapes.title
+content = slide_3.placeholders[1]
+title.text = "Methodology"
+content.text = "The Astra-Aurora system utilizes advanced algorithms and real-time data analysis to predict auroral activity."
+
+# Slide 4: Technology
+slide_4 = presentation.slides.add_slide(presentation.slide_layouts[1])
+title = slide_4.shapes.title
+content = slide_4.placeholders[1]
+title.text = "Technology"
+content.text = "The system is built on a robust technology stack, including machine learning and atmospheric modeling."
+
+# Slide 5: Applications
+slide_5 = presentation.slides.add_slide(presentation.slide_layouts[1])
+title = slide_5.shapes.title
+content = slide_5.placeholders[1]
+title.text = "Applications"
+content.text = "The Astra-Aurora forecasting system has applications in space weather prediction, satellite operations, and more."
+
+# Save the presentation
+presentation.save("Astra-Aurora-Technical-Submission.pptx")
