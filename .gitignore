@@ -1,0 +1,7 @@
+venv/
+node_modules/
+__pycache__/
+alerts.db
+*.pyc
+*.swp
+
